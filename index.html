@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myportfolio</title>
+    <title>MYPortfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -13,7 +13,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#project">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -28,25 +28,187 @@
         <div class="hamburger-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="assets/profile-picture.png" alt="Leo's picture" />
+        <img src="assets/profile-picture.png" alt="My profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I am</p>
-        <h class="section__text__title">Leonardo Chandra</h>
+        <h1 class="section__text__title">Leonardo Chandra</h1>
         <p class="section__text__p2">App Developer · Web Developer</p>
         <div class="section__btn-container">
-          <button class="section__btn__1" onclick="window.open('assets/CV Leonardo Chandra.pdf')">Download My CV</button>
-          <button class="section__btn__2" onclick="location.href='#contact'">Contact Me!</button>
+          <button class="btn section__btn__1" onclick="window.open('assets/CV Leonardo Chandra.pdf')">Download My CV!</button>
+          <button class="btn section__btn__2" onclick="location.href='#contact'">Contact Me!</button>
+        </div>
+        <div id="section__socials-container">
+          <img src="assets/linkedin-logo.png" alt="My LinkedIn Profile" class="section__socials__icon" onclick="window.open('https://www.linkedin.com/in/leonardochandra2001/')" />
+          <img src="assets/github-logo.png" alt="My Github Profile" class="section__socials__icon" onclick="window.open('https://github.com/LeonardoChandra')" />
         </div>
       </div>
     </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="section__text__title">ABOUT ME!</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="assets/about-picture.jpeg" alt="My profile picture" class="section__about__img1" />
+        </div>
+        <div class="section__universal__details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img src="assets/experience.png" alt="experience-icon" class="section__details__icon" />
+              <h3>Experience</h3>
+              <p>1+ years<br />App Development</p>
+            </div>
+            <div class="details-container">
+              <img src="assets/education.png" alt="education" class="section__details__icon" />
+              <h3>Education</h3>
+              <p>B.Sc. Information System<br />Universitas Airlangga</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a developer based in <b>Indonesia</b>. I have experience both in developing <b>application and website</b> from a news API android application to this portfolio. I'm very passionate in learning <b>new technology</b> and
+              making a <b>cutting edge, beautiful design</b>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Have A Look At</p>
+      <h1 class="section__text__title">My Experience!</h1>
+      <div class="section__universal__details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="experience-title">Web Development</h2>
+            <p class="experience-sub-title">Frontend Development</p>
+            <div class="article-container">
+              <article>
+                <li class="list-block"></li>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <li class="list-block"></li>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <li class="list-block"></li>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="experience-none">
+                <li class="list-block"></li>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-title">App Development</h2>
+            <p class="experience-sub-title">Frontend Development</p>
+            <div class="article-container">
+              <article>
+                <li class="list-block"></li>
+                <div>
+                  <h3>Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <li class="list-block"></li>
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <p class="section__text__p1">Browse Through</p>
+      <h1 class="section__text__title">My Projects!</h1>
+      <div class="section__universal__details-container">
+        <div class="project-container">
+          <div class="details-container color-container-none">
+            <div class="article-container">
+              <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-title project-title">MYNews</h2>
+            <div class="section__btn-container">
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-title project-title">MYNews</h2>
+            <div class="section__btn-container">
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
+              <button class="btn section__btn__2 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container-none">
+            <div class="article-container">
+              <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-title project-title">MYNews</h2>
+            <div class="section__btn-container">
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="section__text__title">Contact Me!</h1>
+      <div class="about-contact">
+        <div class="section__contact__details-container">
+          <div class="contact-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+          <div class="contact-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="contact-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <div class="section__btn-container">
+            <input type="submit" value="Send!" class="btn section__btn__2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-text">Copyright &#169; 2023. Made with passion by Leonardo Chandra</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

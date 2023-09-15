@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(204, 0, 204);
+  color: rgb(90, 90, 90);
 }
 
 /* Transition */
@@ -52,15 +52,16 @@ a {
 }
 
 a:hover {
-  color: rgb(153, 0, 153);
+  color: rgb(90, 90, 90);
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
 
-.logo-img {
-  object-fit: cover;
+.logo {
+  display: flex;
   width: 5rem;
   height: 5rem;
+  margin: auto 0;
 }
 
 .logo:hover {
@@ -144,4 +145,364 @@ a:hover {
 
 .hamburger-icon span:last-child {
   transform: none;
+}
+
+/* Section */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+/* Profile Section */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section__text__title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Profile Icon */
+
+#section__socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.section__socials__icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* Button */
+
+.section__btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 9.5rem;
+  border-radius: 2rem;
+}
+
+.section__btn__1,
+.section__btn__2 {
+  border: rgb(90, 90, 90) 0.1rem solid;
+}
+
+.section__btn__1:hover,
+.section__btn__2:hover {
+  cursor: pointer;
+  border: rgb(225, 225, 225) 0.1rem solid;
+}
+.section__btn__1:hover,
+.section__btn__2 {
+  background: rgb(90, 90, 90);
+  color: white;
+}
+
+.section__btn__2:hover {
+  background: rgb(70, 70, 70);
+}
+
+.section__btn__1 {
+  background: none;
+}
+
+/* About Section */
+
+#about {
+  position: relative;
+}
+
+.section__universal__details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.about-container {
+  gap: 2rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.section__about__img1 {
+  border-radius: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(243, 243, 243);
+  border-radius: 2rem;
+  border: rgb(90, 90, 90) 0.1rem solid;
+  text-align: center;
+}
+
+/* About Icon */
+
+.section__details__icon {
+  height: 2rem;
+}
+
+/* Experience Section */
+
+#experience {
+  position: relative;
+}
+
+.list-block {
+  list-style-type: none;
+  position: relative;
+}
+
+.list-block::before {
+  content: "■";
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: -0.4rem;
+}
+
+.experience-title {
+  color: rgb(70, 70, 70);
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.experience-sub-title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.experience-none {
+  visibility: hidden;
+}
+
+/* Project Section */
+
+#project {
+  position: relative;
+}
+
+.project-container {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-container {
+  background: white;
+}
+.color-container-none {
+  visibility: hidden;
+}
+
+.project-title {
+  margin: 1rem;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  display: block;
+}
+
+/* Contact Section */
+
+#contact {
+  justify-content: center;
+  flex-direction: column;
+  display: relative;
+  height: 90vh;
+}
+
+.about-contact {
+  gap: 2rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.section__contact__details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(90, 90, 90) 0.1rem solid;
+  background: rgb(245, 245, 245);
+  padding: 2rem 8%;
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.contact-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  background: none;
+  border: 2px solid;
+  padding: 0.6rem 1.2rem;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.contact-container.textarea label {
+  top: 0.8rem;
+  transform: translateY(0);
+}
+
+.contact-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+}
+
+.contact-container span:before,
+.contact-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: rgb(245, 245, 245);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-container span:before {
+  left: 50%;
+}
+
+.contact-container span:after {
+  right: 50%;
+}
+
+.contact-container.focus label {
+  top: 0%;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.contact-container.focus span:before,
+.contact-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+/* Footer Section */
+
+footer {
+  height: 10vh;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  padding-top: 0.5rem;
+  text-align: center;
 }
