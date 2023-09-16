@@ -14,19 +14,22 @@
   #project {
     margin-bottom: 5rem;
   }
-  #project {
+  #project,
+  #contact {
     height: fit-content;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
+  #desktop-nav,
+  .experience-none {
     display: none;
   }
   #hamburger-nav {
     display: flex;
   }
   #experience,
+  .section-container,
   .section__universal__details-container {
     margin-top: 2rem;
   }
@@ -94,5 +97,14 @@
   }
   .section__contact__details-container {
     width: 100%;
+  }
+  .about-text {
+    margin-top: 0.5rem;
+    line-height: 100%;
+  }
+  .about-text br {
+    content: "";
+    display: block;
+    height: 1rem;
   }
 }

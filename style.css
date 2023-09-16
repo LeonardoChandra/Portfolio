@@ -421,6 +421,8 @@ article {
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  color: rgb(90, 90, 90);
 }
 
 textarea.input {

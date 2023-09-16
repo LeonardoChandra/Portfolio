@@ -6,6 +6,12 @@
     <title>MYPortfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("FIx1elqv6w6vtN3Ar");
+      })();
+    </script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -63,12 +69,12 @@
             <div class="details-container">
               <img src="assets/experience.png" alt="experience-icon" class="section__details__icon" />
               <h3>Experience</h3>
-              <p>1+ years<br />App Development</p>
+              <p class="about-text">1+ years<br />App Development</p>
             </div>
             <div class="details-container">
               <img src="assets/education.png" alt="education" class="section__details__icon" />
               <h3>Education</h3>
-              <p>B.Sc. Information System<br />Universitas Airlangga</p>
+              <p class="about-text">B.Sc. Information System<br />Universitas Airlangga</p>
             </div>
           </div>
           <div class="text-container">
@@ -185,23 +191,28 @@
       <h1 class="section__text__title">Contact Me!</h1>
       <div class="about-contact">
         <div class="section__contact__details-container">
+          <!-- action="https://formsubmit.co/ddb6803b65bc630e58c8da42cf45be0d" method="POST" -->
+          <!-- Honeypot -->
+          <!-- <input type="text" name="_honey" style="display: none;"> -->
+          <!-- Captcha -->
+          <!-- <input type="hidden" name="_captcha" value="false"> -->
           <div class="contact-container">
-            <input type="text" name="name" class="input" />
-            <label for="">Name</label>
+            <input type="text" name="Name" class="input" id="nameID" required />
+            <label>Name</label>
             <span>Name</span>
           </div>
           <div class="contact-container">
-            <input type="email" name="email" class="input" />
-            <label for="">Email</label>
+            <input type="email" name="Email" class="input" id="emailID" required />
+            <label>Email</label>
             <span>Email</span>
           </div>
           <div class="contact-container textarea">
-            <textarea name="message" class="input"></textarea>
-            <label for="">Message</label>
+            <textarea name="Message" class="input" id="messageID" required></textarea>
+            <label>Message</label>
             <span>Message</span>
           </div>
           <div class="section__btn-container">
-            <input type="submit" value="Send!" class="btn section__btn__2" />
+            <input type="submit" class="btn section__btn__2" value="send" onclick="sendEmail()" />
           </div>
         </div>
       </div>
@@ -209,6 +220,6 @@
     <footer>
       <p class="footer-text">Copyright &#169; 2023. Made with passion by Leonardo Chandra</p>
     </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
