@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 p {
@@ -260,6 +260,7 @@ section {
 
 #about {
   position: relative;
+  scroll-snap-align: start;
 }
 
 .section__universal__details-container {
@@ -298,6 +299,7 @@ section {
 
 #experience {
   position: relative;
+  scroll-snap-align: start;
 }
 
 .list-block {
@@ -348,6 +350,7 @@ article {
 
 #project {
   position: relative;
+  scroll-snap-align: start;
 }
 
 .project-container {
@@ -379,6 +382,7 @@ article {
 /* Contact Section */
 
 #contact {
+  scroll-snap-align: start;
   justify-content: center;
   flex-direction: column;
   display: relative;

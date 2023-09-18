@@ -1,3 +1,7 @@
+window.onload = function () {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+};
+
 //Hamburger Menu
 
 const inputs = document.querySelectorAll(".input");
@@ -37,6 +41,8 @@ const submit_btn = document.getElementById("submit-btn");
 const honeypot = document.getElementById("honey");
 let canSubmit = false;
 let reaction = null;
+
+submit_btn.disabled = true;
 
 function eJS_form_event_listeners() {
   eJS_Name.addEventListener("keyup", eJS_can_submit);
@@ -104,7 +110,12 @@ function sendEmail() {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      alert("Thank you, " + params["Name"] + "! Your message has been sent.");
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "success",
+        text: "Thank you, " + params["Name"] + "!\nYour message has been sent.",
+      });
       document.getElementById("error-span").textContent = "Thank you for your message! :)";
       document.getElementById("error-span").style.color = "green";
       document.getElementById("error-span").style.visibility = "visible";
@@ -118,6 +129,12 @@ function sendEmail() {
       eJS_disabled_submit();
     })
     .catch((err) => {
-      alert("There is an error! " + err.message + "\n\nPlease kindly contact me through IG if you encounter any problem!");
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Oops...",
+        text: "Sorry " + params["Name"] + "! Something went wrong!",
+        footer: '<a href="https://www.instagram.com/leonardo.chandraa">Report to my instagram DM</a>',
+      });
     });
 }
