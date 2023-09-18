@@ -12,6 +12,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-snap-type: y proximity;
 }
 
@@ -146,6 +147,34 @@ a:hover {
 .hamburger-icon span:last-child {
   transform: none;
 }
+
+/* Sidebar Navigation */
+
+/* #side-nav {
+  --nav-gap: 15px;
+  padding: var(--nav-gap);
+  position: fixed;
+  right: 3%;
+  top: 80%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+
+.side-nav-link {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: var(--nav-gap);
+}
+
+.nav-bullet {
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  height: var(--nav-gap);
+  margin-left: var(--nav-gap);
+  transition: transform 0.1s;
+  width: var(--nav-gap);
+} */
 
 /* Section */
 

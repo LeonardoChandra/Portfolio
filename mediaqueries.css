@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  html {
+    scroll-snap-type: none;
+  }
+
   #desktop-nav,
   .experience-none {
     display: none;
