@@ -190,29 +190,30 @@
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="section__text__title">Contact Me!</h1>
       <div class="about-contact">
-        <div class="section__contact__details-container">
+        <div class="section__contact__details-container" id="contact-form">
           <!-- action="https://formsubmit.co/ddb6803b65bc630e58c8da42cf45be0d" method="POST" -->
           <!-- Honeypot -->
-          <!-- <input type="text" name="_honey" style="display: none;"> -->
+          <input type="text" name="_honey" id="honey" style="display: none" value="" />
           <!-- Captcha -->
           <!-- <input type="hidden" name="_captcha" value="false"> -->
+          <span id="error-span">Please fill all of the form correctly!</span>
           <div class="contact-container">
-            <input type="text" name="Name" class="input" id="nameID" required />
+            <input type="text" name="Name" class="input" id="nameID" autocomplete="off" required />
             <label>Name</label>
-            <span>Name</span>
+            <span class="contact-span">Name</span>
           </div>
           <div class="contact-container">
-            <input type="email" name="Email" class="input" id="emailID" required />
+            <input type="email" name="Email" class="input" id="emailID" autocomplete="off" required />
             <label>Email</label>
-            <span>Email</span>
+            <span class="contact-span">Email</span>
           </div>
           <div class="contact-container textarea">
-            <textarea name="Message" class="input" id="messageID" required></textarea>
+            <textarea name="Message" class="input" id="messageID" autocomplete="off" required></textarea>
             <label>Message</label>
-            <span>Message</span>
+            <span class="contact-span">Message</span>
           </div>
           <div class="section__btn-container">
-            <input type="submit" class="btn section__btn__2" value="send" onclick="sendEmail()" />
+            <input type="submit" class="btn" value="Send Message" id="submit-btn" onclick="sendEmail()" />
           </div>
         </div>
       </div>
