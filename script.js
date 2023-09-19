@@ -13,6 +13,43 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+// Sidebar Navigation
+
+function activateSideNav() {
+  const sections = document.querySelectorAll("section");
+  const navContainer = document.createElement("NAV");
+  const sideNavLink = Array.from(sections).map((section) => {
+    return `
+        <div class="side-nav-link" data-for-section="${section.id}">
+          <a href="#${section.id}" class="nav-bullet"> </a>
+        </div>
+    `;
+  });
+
+  navContainer.classList.add("side-nav");
+  navContainer.innerHTML = sideNavLink.join("");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const navBullet = document.querySelector(`.side-nav-link[data-for-section="${entry.target.id}"] .nav-bullet`);
+        if (entry.isIntersecting) {
+          navBullet.classList.add("selected");
+        } else {
+          navBullet.classList.remove("selected");
+        }
+      });
+    },
+    { threshold: [0.5] }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  document.body.appendChild(navContainer);
+}
+
+activateSideNav();
+
 //Focus Contact
 
 function focusFunc() {
@@ -138,3 +175,15 @@ function sendEmail() {
       });
     });
 }
+
+console.log(
+  `%c ________________________________________
+< mooooooooooooooooooooooooooooooooooooo >
+ ----------------------------------------
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     ||`,
+  "font-family:monospace;color: white;"
+);

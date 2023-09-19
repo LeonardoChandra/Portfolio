@@ -150,31 +150,37 @@ a:hover {
 
 /* Sidebar Navigation */
 
-/* #side-nav {
-  --nav-gap: 15px;
-  padding: var(--nav-gap);
+.side-nav {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  right: 3%;
-  top: 80%;
-  transform: translateY(-50%);
-  z-index: 500;
+  align-items: center;
+  justify-items: center;
+  right: 5%;
+  top: 75%;
+  gap: 2rem;
 }
 
 .side-nav-link {
   align-items: center;
   display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: var(--nav-gap);
+  align-self: center;
 }
 
 .nav-bullet {
-  background: rgb(0, 0, 0);
-  border-radius: 50%;
-  height: var(--nav-gap);
-  margin-left: var(--nav-gap);
+  background: rgb(90, 90, 90);
+  transform: rotate(45deg);
   transition: transform 0.1s;
-  width: var(--nav-gap);
-} */
+  width: 6px;
+  height: 6px;
+  position: absolute;
+}
+
+.nav-bullet.selected {
+  background: transparent;
+  border: rgb(60, 60, 60) 0.1rem solid;
+  transform: scale(1.4) rotate(0deg) translateX(-9.5%);
+}
 
 /* Section */
 
@@ -552,6 +558,7 @@ textarea.input {
   font-weight: 300;
   color: red;
   visibility: hidden;
+  align-self: center;
 }
 
 /* Footer Section */

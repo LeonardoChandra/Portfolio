@@ -32,6 +32,9 @@
   #hamburger-nav {
     display: flex;
   }
+  .side-nav {
+    display: none;
+  }
   #experience,
   .section-container,
   .section__universal__details-container {
