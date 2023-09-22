@@ -30,10 +30,14 @@ My simple personal portfolio that features my experience and project is built us
 🍔 Hamburger menu
 💠 Side navigation
 📧 Working email form
-## Installation
+
+# Installation
 
 - Clone the repository and modify the content of index.html according to your requirement.
 - Add or remove images from LeonardoChandra.github.io/assets directory as per your requirement.
 - Use [Github Page](https://pages.github.com/) to deploy your website with ease. 
 - To deploy, you must first create github repository with name <your-particular-github-username>.github.io. Please don't give any other name.
 - Push the generated code to the master branch of this repository.
+
+# Thank you!
+Give a ⭐ if you like my personal portfolio!
