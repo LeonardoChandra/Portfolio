@@ -7,7 +7,8 @@
 </div>
 
 <p align="center"> - [Report Bug or Improvement Sugestion](https://github.com/LeonardoChandra/LeonardoChandra.github.io/issues)</p>
-## Tools Used
+
+# Tools Used
 
 My simple personal portfolio that features my experience and project is built using:
 
@@ -22,8 +23,8 @@ My simple personal portfolio that features my experience and project is built us
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
 </div>
-#
-## Features
+
+# Features
 
 📱 Responsive design
 🍔 Hamburger menu
