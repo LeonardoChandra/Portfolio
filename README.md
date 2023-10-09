@@ -10,7 +10,7 @@
 <div align="center" style="font-weight: bold"><a href="https://github.com/LeonardoChandra/LeonardoChandra.github.io/issues">Report Bug or Improvement Sugestion</a></div>
 
 <br></br>
-# Tools Used 🔧
+## Tools Used 🔧
 <div align="column">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
   <img width="12" />
@@ -24,7 +24,7 @@
 </div>
 
 <br></br>
-# Features 📋
+## Features 📋
 
 📱 Responsive design
 
@@ -35,7 +35,11 @@
 📧 Working email form
 
 <br></br>
-# Installation 📂
+## Project Experience 🚀
+I learn a lot through this personal portfolio project especially basic language like JavaScript and HTML/CSS. There are a lot of features that are implemented like responsive desgin for mobile users, burger and side navigation, and working email form using email sender service provider EmailJS. This is my first time making a personal portfolio and I hope to improve it as time goes on. Feel free to leave a comment or suggestion through <a href="https://github.com/LeonardoChandra/LeonardoChandra.github.io/issues">GitHub issue</a> or through my email contact in the portfolio!
+
+<br></br>
+## Installation 📂
 
 - Clone the repository and modify the content of index.html according to your requirement.
 - Add or remove images from LeonardoChandra.github.io/assets directory as per your requirement.
@@ -44,5 +48,5 @@
 - Push the generated code to the master branch of this repository.
 
 <br></br>
-# Thank you! 🐥
+## Thank you! 🐥
 Give a ⭐ if you like my personal portfolio!
