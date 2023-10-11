@@ -1,13 +1,13 @@
 # MYPortfolio 📋
-> A simple, modern, responsive personal portfolio website.
-<br></br>
-> [LIVE DEMO](https://leonardochandra.github.io/)
-<br></br>
+**A SIMPLE, MODERN, AND RESPONSIVE PERSONAL PORTFOLIO WEBSITE.**
+> **[LIVE DEMO](https://leonardochandra.github.io/Portfolio)**
+
+<br>
 <div align="center">
-  <img src="https://github.com/LeonardoChandra/LeonardoChandra.github.io/assets/137888895/b5057881-7e68-407b-9c7b-5723c870d851"  />
+  <img src="https://github.com/LeonardoChandra/LeonardoChandra.github.io/assets/137888895/b5057881-7e68-407b-9c7b-5723c870d851"/>
 </div>
 
-<div align="center" style="font-weight: bold"><a href="https://github.com/LeonardoChandra/LeonardoChandra.github.io/issues">Report Bug or Improvement Sugestion</a></div>
+<div align="center" style="font-weight: bold"><a href="https://github.com/LeonardoChandra/Portfolio/issues">Report Bug or Improvement Sugestion</a></div>
 
 <br></br>
 ## Tools Used 🔧
@@ -34,7 +34,7 @@
 
 <br></br>
 ## Project Experience 🚀
-I learn a lot through this personal portfolio project especially basic language like JavaScript and HTML/CSS. There are a lot of features that are implemented like responsive desgin for mobile users, burger and side navigation, and working email form using email sender service provider EmailJS. This is my first time making a personal portfolio and I hope to improve it as time goes on. Feel free to leave a comment or suggestion through <a href="https://github.com/LeonardoChandra/LeonardoChandra.github.io/issues">GitHub issue</a> or through my email contact in the portfolio!
+I learn a lot through this personal portfolio project especially basic language like JavaScript and HTML/CSS. There are a lot of features that are implemented like responsive desgin for mobile users, burger and side navigation, and working email form using email sender service provider EmailJS. This is my first time making a personal portfolio and I hope to improve it as time goes on. Feel free to leave a comment or suggestion through <a href="https://github.com/LeonardoChandra/Portfolio/issues">GitHub issue</a> or through my email contact in the portfolio!
 
 <br></br>
 ## Installation 📂
