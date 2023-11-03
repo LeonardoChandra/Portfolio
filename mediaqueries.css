@@ -6,9 +6,6 @@
   .project-container {
     flex-wrap: wrap;
   }
-  .color-container-none {
-    display: none;
-  }
   #about,
   #experience,
   #project {
@@ -23,6 +20,7 @@
 @media screen and (max-width: 1200px) {
   html {
     scroll-snap-type: none;
+    overflow-x: hidden;
   }
 
   #desktop-nav,
@@ -98,6 +96,12 @@
   }
   .project-btn {
     width: 8rem;
+  }
+  .slider-caption {
+    font-size: 15px;
+  }
+  .projects-preview p {
+    padding: 0 1rem;
   }
   .text-container {
     text-align: justify;

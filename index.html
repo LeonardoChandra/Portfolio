@@ -6,6 +6,8 @@
     <title>MYPortfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
@@ -98,28 +100,36 @@
             <p class="experience-sub-title">Frontend Development</p>
             <div class="article-container">
               <article>
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>HTML</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>JavaScript</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article class="experience-none">
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>JavaScript</h3>
                   <p>Basic</p>
@@ -132,17 +142,21 @@
             <p class="experience-sub-title">Frontend Development</p>
             <div class="article-container">
               <article>
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>Kotlin</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <li class="list-block"></li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 list-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+                </svg>
                 <div>
                   <h3>Java</h3>
-                  <p>Basic</p>
+                  <p>Fundamental</p>
                 </div>
               </article>
             </div>
@@ -154,35 +168,81 @@
       <p class="section__text__p1">Browse Through</p>
       <h1 class="section__text__title">My Projects!</h1>
       <div class="section__universal__details-container">
-        <div class="project-container">
-          <div class="details-container color-container-none">
+        <div class="grid-container">
+          <div class="project-details-container" data-name="p-1">
             <div class="article-container">
               <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
             </div>
             <h2 class="experience-title project-title">MYNews</h2>
+            <p>See details &rarr;</p>
+            <div class="section__btn-container"></div>
+          </div>
+          <div class="project-details-container" data-name="p-2">
+            <div class="article-container">
+              <img src="assets/project-mernchat.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-title project-title">Mern Chat</h2>
             <div class="section__btn-container">
-              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
-              <button class="btn section__btn__1 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
+              <p>See details &rarr;</p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
+        </div>
+        <div class="projects-preview">
+          <div class="projects-details-preview" data-target="p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 closeIcon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <!-- SLIDER -->
+            <div class="slider-wrapper">
+              <div class="main-carousel">
+                <div class="carousel-cell">
+                  <div class="slider-caption">Read worlwide news</div>
+                  <img src="assets/display/1.png" />
+                </div>
+                <div class="carousel-cell">
+                  <div class="slider-caption">Search a particular subject</div>
+                  <img src="assets/display/2.png" />
+                </div>
+                <div class="carousel-cell">
+                  <div class="slider-caption">Saved news to read later</div>
+                  <img src="assets/display/3.png" />
+                </div>
+              </div>
             </div>
+            <!-- SLIDER -->
             <h2 class="experience-title project-title">MYNews</h2>
+            <p>A news application where you can read, save, and search news all over the world!</p>
             <div class="section__btn-container">
               <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
               <button class="btn section__btn__2 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container-none">
-            <div class="article-container">
-              <img src="assets/project-mynews.png" alt="Project 1" class="project-img" />
+          <div class="projects-details-preview" data-target="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 closeIcon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <!-- SLIDER -->
+            <div class="slider-wrapper">
+              <div class="main-carousel">
+                <div class="carousel-cell">
+                  <div class="slider-caption">Register and login to your account</div>
+                  <img src="assets/display/4.png" />
+                </div>
+                <div class="carousel-cell">
+                  <div class="slider-caption">See who is online</div>
+                  <img src="assets/display/5.png" />
+                </div>
+                <div class="carousel-cell">
+                  <div class="slider-caption">Send mesage and image to friends</div>
+                  <img src="assets/display/6.png" />
+                </div>
+              </div>
             </div>
-            <h2 class="experience-title project-title">MYNews</h2>
+            <!-- SLIDER -->
+            <h2 class="experience-title project-title">Mern Chat</h2>
+            <p>A chat application where you can message and socialize with people all over the world!</p>
             <div class="section__btn-container">
-              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/News-API')">GitHub</button>
-              <button class="btn section__btn__1 project-btn" onclick="window.open('https://appetize.io/app/xztln4i2worlyzoqxqt46o26oi')">Live Demo</button>
+              <button class="btn section__btn__1 project-btn" onclick="window.open('https://github.com/LeonardoChandra/MERN-Chat')">GitHub</button>
             </div>
           </div>
         </div>
@@ -223,5 +283,6 @@
     <footer>
       <p class="footer-text">Copyright &#169; 2023. Made with passion by Leonardo Chandra</p>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>

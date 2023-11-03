@@ -50,6 +50,45 @@ function activateSideNav() {
 
 activateSideNav();
 
+//Details Preview
+
+let projectPreviewContainer = document.querySelector(".projects-preview");
+let projectPreviewBox = document.querySelectorAll(".projects-details-preview");
+document.querySelectorAll(".grid-container .project-details-container").forEach((projectDetailsContainer) => {
+  projectDetailsContainer.onclick = () => {
+    projectPreviewContainer.style.display = "flex";
+    let name = projectDetailsContainer.getAttribute("data-name");
+    projectPreviewBox.forEach((preview) => {
+      let target = preview.getAttribute("data-target");
+      if (name == target) {
+        preview.classList.add("active");
+      }
+    });
+    $(".main-carousel").flickity({
+      // options
+      cellAlign: "left",
+      wrapAround: true,
+      autoPlay: 4000,
+      pauseAutoPlayOnHover: false,
+    });
+  };
+});
+
+Flickity.prototype.stopPlayer = function () {
+  this.player.stop();
+  setTimeout(() => {
+    this.player.play();
+  }, 5000);
+};
+
+projectPreviewBox.forEach((close) => {
+  close.querySelector(".closeIcon").onclick = () => {
+    close.classList.remove("active");
+    projectPreviewContainer.style.display = "none";
+    $(".main-carousel").flickity("destroy");
+  };
+});
+
 //Focus Contact
 
 function focusFunc() {
